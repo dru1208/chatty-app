@@ -14,15 +14,13 @@ https://github.com/dru1208/chatty_server
 
 | React | JSX | WebSockets |
 
-
+### Screenshots
+![User have joined and usernames have been changed, counter has been updated. Notifications show who is leaving the room.](https://github.com/dru1208/chatty-app/blob/master/docs/1.png?raw=true)
+![Robert can see messsages from his friends and the ones that he has sent](https://github.com/dru1208/chatty-app/blob/master/docs/2.png?raw=true)
+![After Robert sends a message, Jerry's window displays the message as well](https://github.com/dru1208/chatty-app/blob/master/docs/3.png?raw=true)
 
 ### Dependencies
 
 * React
 * Webpack
 
-1 - User have joined and usernames have been changed, counter has been updated. Notifications show who is leaving the room.
-2 - Robert can see messsages from his friends and the ones that he has sent
-3 - After Robert sends a message, Jerry's window displays the message as well
-
-![Alt text](http://full/path/to/img.jpg "Optional title")
