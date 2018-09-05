@@ -19,6 +19,7 @@ const GenerateMessageList = (props) => {
   return (
     <main className="messages">
       {generateMessages}
+      <br/>
       {generateNotifications}
     </main>
   )
