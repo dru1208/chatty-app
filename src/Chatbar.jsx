@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 
-// function OnKeyDown() {
-
-// }
-
 class GenerateChatBar extends Component {
   render() {
     return (
