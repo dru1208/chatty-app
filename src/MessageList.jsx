@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import GenerateMessage from './Message.jsx'
 import GenerateNotification from './Notification.jsx'
 
+// child functional component for dynamically generating message list with username and message
+
 const GenerateMessageList = (props) => {
 
   const generateMessages =

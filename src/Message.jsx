@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+// child functional component for dynamically generating message to be placed in message list
+
 const GenerateMessage = (props) => {
   return (
     <div className="message">

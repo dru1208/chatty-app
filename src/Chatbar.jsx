@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+// child functional component for generating chatbar
+
 class GenerateChatBar extends Component {
   render() {
     return (

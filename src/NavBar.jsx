@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+// child functional component for generating a navbar
+
 const GenerateNavBar = (props) => {
   return (
     <nav className="navbar">
