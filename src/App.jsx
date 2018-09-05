@@ -50,7 +50,7 @@ class App extends Component {
     if (event.key === "Enter" && event.target.value !== "") {
       const newMessageObj = {type: "postMessage", username: this.state.currentUser.name, content: event.target.value};
       this.socket.send(JSON.stringify(newMessageObj));
-      event.target.value = ""
+      event.target.value = "";
     }
   }
 
