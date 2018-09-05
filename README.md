@@ -21,6 +21,8 @@ https://github.com/dru1208/chatty_server
 * React
 * Webpack
 
+1 - User have joined and usernames have been changed, counter has been updated. Notifications show who is leaving the room.
+2 - Robert can see messsages from his friends and the ones that he has sent
+3 - After Robert sends a message, Jerry's window displays the message as well
 
-
-
+![Alt text](http://full/path/to/img.jpg "Optional title")
