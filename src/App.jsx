@@ -45,26 +45,21 @@ class App extends Component {
 
   // function for sending data and changing state when user enters a new value for username
   _handleUserChange = event => {
-    if (
-      event.key === "Enter" &&
-      event.target.value !== "" &&
-      event.target.value !== this.state.currentUser.name
-    ) {
-      const oldUsername = this.state.currentUser.name;
-      const usernameNotifObject = {
-        type: "postNotification",
-        oldUsername: oldUsername,
-        newUsername: event.target.value
-      };
-      this.socket.send(JSON.stringify(usernameNotifObject));
-      const userInfo = { name: event.target.value };
-      this.setState({ currentUser: userInfo });
-    }
+    const oldUsername = this.state.currentUser.name;
+    const usernameNotifObject = {
+      type: "postNotification",
+      oldUsername: oldUsername,
+      newUsername: event.target.value
+    };
+    this.socket.send(JSON.stringify(usernameNotifObject));
+    const userInfo = { name: event.target.value };
+    this.setState({ currentUser: userInfo });
   };
+
+
 
   // function for sending data and changing state when user sends a new message
   _handleTextInputChange = event => {
-    if (event.key === "Enter" && event.target.value !== "") {
       const newMessageObj = {
         type: "postMessage",
         username: this.state.currentUser.name,
@@ -72,8 +67,9 @@ class App extends Component {
       };
       this.socket.send(JSON.stringify(newMessageObj));
       event.target.value = "";
-    }
   };
+
+
 
   render() {
     return (
@@ -91,5 +87,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

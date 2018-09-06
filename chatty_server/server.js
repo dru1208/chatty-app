@@ -24,11 +24,11 @@ const wss = new SocketServer({ server });
 wss.on("connection", ws => {
 
   // sets username property for recording who logs out
-  ws.username = "Somebody";
+  ws.username = "Anon";
   const newUserConnectedObj = {
     type: "incomingNotification",
     id: uuidv4(),
-    content: "Someone has joined this chat room!",
+    content: "Anon has joined this chat room!",
     totalUsers: wss.clients.size
   };
 
