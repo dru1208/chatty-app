@@ -54,7 +54,7 @@ wss.on("connection", ws => {
         imageText = imageArray[0];
         newMessageObject.content = `
         <div>
-          <img src="${imageText}" alt="Your picture isn't loaded" style="max-width:60%;"/>
+          <img src="${imageText}" alt="Sorry, we can't seem to find your picture. Seriously, is this even a picture link?" style="max-width:60%;"/>
         </div>
         `
       }
