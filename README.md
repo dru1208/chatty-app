@@ -5,14 +5,14 @@ Chatty-App
 
 A clean and simple Slack clone that allows multiple users to chat together in the same space. The process was great practice for practicing the use of props and states between parent and child components, as well as visualizing proper use of components to encompass different parts of the HTML.
 
-To see the server portion of this project, visit the following link:
-https://github.com/dru1208/chatty_server
+Chatty_server subdirectory:
+Simple Websocket server for the Chatty App. Processes new posts, changes in username, and outgoing notifications
 
 
 ### Showcases:
 
 
-| React | JSX | WebSockets |
+| React | JSX | WebSockets | Express |
 
 ### Screenshots
 ![User have joined and usernames have been changed, counter has been updated. Notifications show who is leaving the room.](https://github.com/dru1208/chatty-app/blob/master/docs/1.png?raw=true)
@@ -23,4 +23,5 @@ https://github.com/dru1208/chatty_server
 
 * React
 * Webpack
-
+* [babel-loader](https://github.com/babel/babel-loader)
+* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
