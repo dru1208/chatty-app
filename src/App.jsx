@@ -33,10 +33,10 @@ class App extends Component {
         const newMessages = [...oldMessages, newServerMessageObj];
         this.setState({ messages: newMessages });
       } else if (newServerMessageObj.type === "incomingNotification") {
-        const oldNotifications = this.state.notifications;
-        const newNotifications = [...oldNotifications, newServerMessageObj];
+        const oldMessages = this.state.messages;
+        const newMessages = [...oldMessages, newServerMessageObj];
         this.setState({
-          notifications: newNotifications,
+          messages: newMessages,
           totalUsers: newServerMessageObj.totalUsers
         });
       }
@@ -81,7 +81,6 @@ class App extends Component {
         <GenerateNavBar totalUsers={this.state.totalUsers} />
         <GenerateMessageList
           messages={this.state.messages}
-          notifications={this.state.notifications}
         />
         <GenerateChatBar
           currentUser={this.state.currentUser.name}

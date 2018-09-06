@@ -6,7 +6,7 @@ const GenerateMessage = (props) => {
   return (
     <div className="message">
       <span className="message-username">{props.username}</span>
-      <span className="message-content">{props.message}</span>
+      <span className="message-content" dangerouslySetInnerHTML={{__html: props.message}}></span>
     </div>
   );
 }

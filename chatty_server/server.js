@@ -45,11 +45,26 @@ wss.on("connection", ws => {
     if (newMessageObject.type === "postMessage") {
       newMessageObject.id = uuidv4();
       newMessageObject.type = "incomingMessage";
+
+      // check if the content is a giphy request
+
+      // check if the content is an image link
+      const imageArray = newMessageObject.content.match(/(.+)\.(jpe?g|png|gif)/)
+      if (imageArray) {
+        imageText = imageArray[0];
+        newMessageObject.content = `
+        <div>
+          <img src="${imageText}" alt="Your picture isn't loaded" style="max-width:60%;"/>
+        </div>
+        `
+      }
       wss.clients.forEach(function each(client) {
         if (client.readyState === WebSocket.OPEN) {
           client.send(JSON.stringify(newMessageObject));
         }
       });
+
+
     } else if (newMessageObject.type === "postNotification") {
       ws.username = newMessageObject.newUsername;
       newMessageObject.id = uuidv4();
