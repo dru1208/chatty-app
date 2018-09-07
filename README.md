@@ -19,15 +19,15 @@ Simple Websocket server for the Chatty App. Processes new posts, changes in user
 
 ### Screenshots
 ![Users leaving and joining are recorded as notifications, so are name changes](https://github.com/dru1208/chatty-app/blob/master/docs/1.png?raw=true)
+* - Users leaving and joining are recorded as notifications, so are name changes
 ![User sends message, broadcasted to everyone](https://github.com/dru1208/chatty-app/blob/master/docs/2.png?raw=true)
+* - User sends message, broadcasted to everyone
 ![User links image, image is rendered on everyone's browser](https://github.com/dru1208/chatty-app/blob/master/docs/3.png?raw=true)
+* - User links image, image is rendered on everyone's browser
 ![User links gif, gif is rendered on everyone's browser](https://github.com/dru1208/chatty-app/blob/master/docs/4.png?raw=true)
+* - User links gif, gif is rendered on everyone's browser
 
 
-1 - Users leaving and joining are recorded as notifications, so are name changes
-2 - User sends message, broadcasted to everyone
-3 - User links image, image is rendered on everyone's browser
-4 - User links gif, gif is rendered on everyone's browser
 
 
 ### Dependencies
