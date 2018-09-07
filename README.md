@@ -18,9 +18,17 @@ Simple Websocket server for the Chatty App. Processes new posts, changes in user
 | React | JSX | WebSockets | Express | Regexp |
 
 ### Screenshots
-![User have joined and usernames have been changed, counter has been updated. Notifications show who is leaving the room.](https://github.com/dru1208/chatty-app/blob/master/docs/1.png?raw=true)
-![Robert can see messsages from his friends and the ones that he has sent](https://github.com/dru1208/chatty-app/blob/master/docs/2.png?raw=true)
-![After Robert sends a message, Jerry's window displays the message as well](https://github.com/dru1208/chatty-app/blob/master/docs/3.png?raw=true)
+![Users leaving and joining are recorded as notifications, so are name changes](https://github.com/dru1208/chatty-app/blob/master/docs/1.png?raw=true)
+![User sends message, broadcasted to everyone](https://github.com/dru1208/chatty-app/blob/master/docs/2.png?raw=true)
+![User links image, image is rendered on everyone's browser](https://github.com/dru1208/chatty-app/blob/master/docs/3.png?raw=true)
+![User links gif, gif is rendered on everyone's browser](https://github.com/dru1208/chatty-app/blob/master/docs/4.png?raw=true)
+
+
+1 - Users leaving and joining are recorded as notifications, so are name changes
+2 - User sends message, broadcasted to everyone
+3 - User links image, image is rendered on everyone's browser
+4 - User links gif, gif is rendered on everyone's browser
+
 
 ### Dependencies
 
