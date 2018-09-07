@@ -3,6 +3,7 @@ const express = require("express");
 const SocketServer = require("ws").Server;
 const uuidv4 = require("uuid/v4");
 
+
 // Set the port to 3001
 const PORT = 3001;
 
@@ -46,10 +47,9 @@ wss.on("connection", ws => {
       newMessageObject.id = uuidv4();
       newMessageObject.type = "incomingMessage";
 
-      // check if the content is a giphy request
-
       // check if the content is an image link
       const imageArray = newMessageObject.content.match(/(.+)\.(jpe?g|png|gif)/)
+
       if (imageArray) {
         imageText = imageArray[0];
         newMessageObject.content = `
@@ -64,7 +64,6 @@ wss.on("connection", ws => {
         }
       });
 
-
     } else if (newMessageObject.type === "postNotification") {
       ws.username = newMessageObject.newUsername;
       newMessageObject.id = uuidv4();
@@ -74,9 +73,7 @@ wss.on("connection", ws => {
       // react side under the type "incomingNotification"
       // this is used to maintain the users counter
       newMessageObject.totalUsers = wss.clients.size;
-      newMessageObject.content = `${
-        newMessageObject.oldUsername
-      } has changed their name to ${newMessageObject.newUsername}`;
+      newMessageObject.content = `${newMessageObject.oldUsername} has changed their name to ${newMessageObject.newUsername}`;
       wss.clients.forEach(function each(client) {
         if (client.readyState === WebSocket.OPEN) {
           client.send(JSON.stringify(newMessageObject));
