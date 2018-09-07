@@ -3,6 +3,8 @@ import GenerateChatBar from "./Chatbar.jsx";
 import GenerateMessageList from "./MessageList.jsx";
 import GenerateNavBar from "./NavBar.jsx";
 
+
+
 class App extends Component {
   constructor(props) {
     super(props);

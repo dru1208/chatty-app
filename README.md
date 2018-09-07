@@ -14,7 +14,6 @@ Simple Websocket server for the Chatty App. Processes new posts, changes in user
 
 ### Showcases:
 
-
 | React | JSX | WebSockets | Express | Regexp |
 
 ### Screenshots
