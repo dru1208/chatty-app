@@ -33,5 +33,6 @@ Simple Websocket server for the Chatty App. Processes new posts, changes in user
 
 * React
 * Webpack
+* WebSockets
 * [babel-loader](https://github.com/babel/babel-loader)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
