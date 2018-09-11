@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
+import propTypes from 'prop-types'
 
 // child functional component for dynamically generating message to be placed in message list
 
@@ -12,3 +13,9 @@ const GenerateMessage = (props) => {
 }
 
 export default GenerateMessage;
+
+
+GenerateMessage.propTypes = {
+  username: propTypes.string.isRequired,
+  message: propTypes.string.isRequired
+}

@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
+import propTypes from 'prop-types'
 
 // child functional component for generating a navbar
 
@@ -12,3 +13,8 @@ const GenerateNavBar = (props) => {
 }
 
 export default GenerateNavBar;
+
+GenerateNavBar.propTypes = {
+  totalUsers: propTypes.number.isRequired
+}
+

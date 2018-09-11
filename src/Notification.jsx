@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React from 'react'
+import propTypes from 'prop-types'
 
 // child functional component for generating notifications
 
@@ -11,3 +12,7 @@ const GenerateNotification = (props) => {
 }
 
 export default GenerateNotification;
+
+GenerateNotification.propTypes = {
+  content: propTypes.string.isRequired
+}
